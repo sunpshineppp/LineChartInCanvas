@@ -50,20 +50,20 @@ public class CreateLineChart extends View{
 		y_axis_color.setColor(Color.BLUE);
 		canvas.drawRect(y_axis,y_axis_color);
 		
-		// draw a test circle
-		Paint data_1_color = new Paint();
-		data_1_color.setColor(Color.GREEN);
-		canvas.drawPoint((int)canvas.getWidth()/2, (int)canvas.getHeight()/2,data_1_color);
+		// draw data
+		Paint point_color = new Paint();
+		point_color.setColor(Color.GREEN);
 		
-		// test
-		canvas.drawCircle(60, 20, 10, data_1_color);
-		canvas.drawCircle(x0, y0, 20, data_1_color);
+		canvas.drawCircle(x0, y0, 3, point_color);
+		canvas.drawCircle(x0+10, y0-260, 3, point_color);
+		canvas.drawCircle(x0+20, y0-290, 3, point_color);
+		canvas.drawCircle(x0+30, y0-240, 3, point_color);
+		canvas.drawCircle(x0+40, y0-120, 3, point_color);
+		canvas.drawCircle(x0+50, y0-130, 3, point_color);
+		canvas.drawCircle(x0+60, y0-80, 3, point_color);
+		canvas.drawCircle(x0+70, y0-50, 3, point_color);
+		canvas.drawCircle(x0+80, y0-450, 3, point_color);
 		
-		Rect test = new Rect();
-		test.set(100,100,300,300);
-		Paint test_color = new Paint();
-		test_color.setColor(Color.BLUE);
-		canvas.drawRect(test,test_color);
 		
 		// start draw
 		invalidate();
